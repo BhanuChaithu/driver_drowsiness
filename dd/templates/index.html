@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Drowsiness Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { text-align: center; padding-top: 50px; }
+    </style>
+</head>
+<body>
+    <h1>Driver Drowsiness Detection (YOLOv8)</h1>
+    <button class="btn btn-success" onclick="startDetection()">Start</button>
+    <button class="btn btn-danger" onclick="stopDetection()">Stop</button>
+
+    <script>
+        function startDetection() { fetch('/start'); }
+        function stopDetection() { fetch('/stop'); }
+    </script>
+</body>
+</html>
